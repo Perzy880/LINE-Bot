@@ -1,3 +1,4 @@
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const axios = require('axios');
@@ -29,7 +30,7 @@ app.post('/webhook', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.send('LINE Bot is running on Render!');
+  res.send('LINE Bot is running!');
 });
 
 const port = process.env.PORT || 3000;
